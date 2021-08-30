@@ -14,6 +14,7 @@ html {
 
 body {
   font-family: "Jost", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /*------ Reusable Component--------*/
@@ -206,12 +207,14 @@ display: block;
 height: 2.6rem;
 margin: 0 2rem;
 }
+/* Apply animation on project images */
 .container .preview{
-display: flex;
-box-shadow: 0 1rem 5rem rgba(0, 0,  0, 0.25);
-transition: all 0.5s;
-transform: translateY(5rem);
-opacity: 0;
+   display: flex;
+   box-shadow: 0 1rem 5rem rgba(0, 0,  0, 0.25);
+   transition: all 0.5s ease;
+   transform: translateY(5rem);
+   opacity: 0;
+   
 }
 .container .preview:hover{
 transform: scale3d(1.025, 1.025, 1.025);
@@ -403,15 +406,19 @@ margin-right: 5rem;
   transition: 0.3s;
   opacity: 1;
   transform: scale(1);
+  
+ 
 }
 .scroll-up-btn .hidden {
   visibility: hidden;
   opacity: 0;
   transform: scale(0.5);
+  transition: all 0.2s ease;
 }
 .scroll-up-btn:hover,
 .scroll-up-btn:focus {
   box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.6);
+  transition: all 0.2s ease;
 }
 
 .scroll-up-btn img {
