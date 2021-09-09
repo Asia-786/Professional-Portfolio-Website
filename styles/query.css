@@ -72,7 +72,7 @@
 /* Maximum width to 600px  */
 @media screen and (max-width: 600px) {
     html {
-        font-size: 52%;
+        font-size: 50%;
     }
     body {
         font-size: 2.2rem;
@@ -99,7 +99,14 @@
     h3{
         font-size: 3rem;
     }
+    .blck-sec{
+         max-width: 450px;
+        font-size: 1rem;
+        }
+        .footer-section{
+            padding: 2rem ;}
 }
+              
 /* Maximum width to 450px  */
 @media (max-width: 450px) {
     .banner br {
@@ -113,6 +120,11 @@
     .banner .main-nav li:not(:last-child) {
         margin-right: 0;
       }
+      .blck-sec{
+        max-width: 400px;
+        padding: 2rem;
+       
+       }
   }
 /* Maximum width to 460px  */
 @media screen and (max-width: 460px) {
