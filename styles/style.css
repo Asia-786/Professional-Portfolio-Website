@@ -3,6 +3,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+          
 }
 
 
@@ -187,12 +188,13 @@ margin: 2rem 0 2.5rem;
   align-items: center;
   }
   .content {
+  flex: 1 1 18rem;
   padding: 0px 48px 0px 0px;
   }
-  .container p{
+  .container .text p{
   margin: 2rem 0;
-  white-space: 10px;
-  max-width: 700px;
+  font-size: 2.2rem;
+  max-width: 540px;
 
   }
   .container ul {
@@ -206,45 +208,38 @@ margin: 2rem 0 2.5rem;
   align-items: center;
   }
   .container .githubmark {
-  
   height: 2.6rem;
   margin: 0 2rem;
   }
   /* Apply animation on project images */
-  .container .preview{
+.preview{
      display: flex;
+     flex: 2 1 20rem;
      box-shadow: 0 1rem 5rem rgba(0, 0,  0, 0.25);
      transition: all 0.5s ease;
      transform: translateY(5rem);
      opacity: 0;
-     -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-     -ms-transition: all 0.5s ease;
-     -o-transition: all 0.5s ease;
-     -webkit-transform: translateY(5rem);
-     -moz-transform: translateY(5rem);
-     -ms-transform: translateY(5rem);
-     -o-transform: translateY(5rem);
+    
 }
-  .container .preview:hover{
+.preview:hover{
   transform: scale3d(1.025, 1.025, 1.025);
   }
-  .container .in-view{
+   .in-view{
   transform: translateY(0);
   opacity: 1;
   }
-  .container .preview img{
+   .preview img{
   width: 100%;
   height: 100%;
   }
   
-  .container .repo {
+.repo {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   }
   
-  .container .repo:hover,
-  .container .repo:focus {
+   .repo:hover,
+.repo:focus {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
@@ -397,41 +392,4 @@ padding-top: 3rem;
 }
 .footer-section li:not(:last-child) {
 margin-right: 5rem;
-}
-/* Scroll Up Button */
-.scroll-up-btn{
-  position: fixed;
-  bottom: 4rem;
-  right: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5.7rem;
-  width: 5.7rem;
-  background: white;
-  border-radius: 50%;
-  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.25);
-  transition: 0.3s ease;
-  opacity: 1;
-  transform: scale(1);
-  -webkit-transition: 0.3s ease;
-  -moz-transition: 0.3s ease;
-  -ms-transition: 0.3s ease;
-  -o-transition: 0.3s ease;
-}
-.scroll-up-btn .hidden {
-  visibility: hidden;
-  opacity: 0;
-  transform: scale(0.5);
-  transition: all 0.2s ease;
-}
-.scroll-up-btn:hover,
-.scroll-up-btn:focus {
-  box-shadow: 0 1rem 6rem rgba(0, 0, 0, 0.6);
-  transition: all 0.2s ease;
-}
-
-.scroll-up-btn img {
-  height: 4.2rem;
-  width: 4.2rem;
 }
